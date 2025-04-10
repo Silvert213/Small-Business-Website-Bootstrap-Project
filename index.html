@@ -11,7 +11,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: burlywood;">
+  <!--Alert-->
+  <div class="container mt-3">
+    <div class="alert alert-info alert-dismissible fade show">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>New Deals!</strong> Buy 4 CDs, get 1 Vinyl 30% off!
+    </div>
+  </div>   
 
 
   <!-- Navbar-->
@@ -23,16 +30,16 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link active" href="#Home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More Info</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Services</a></li>
-            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#Services">Services</a></li>
+            <li><a class="dropdown-item" href="#Contact">Contact</a></li>
           </ul>
         </li>
       </ul>
@@ -42,11 +49,19 @@
 
   <!--Containers-->
   <div class="container-fluid mt-3">
-    <div class="row">
-      <div class="col-sm-3 p-3 bg-primary text-white">Vinyls</div>
-      <div class="col-sm-3 p-3 bg-dark text-white">CDs</div>
-      <div class="col-sm-3 p-3 bg-primary text-white">Record Players</div>
-      <div class="col-sm-3 p-3 bg-dark text-white">Posters</div>
+    <div class="row" id="Home">
+      <div class="col-sm-3 p-3 bg-danger text-white">Vinyls</div>
+      <div class="col-sm-3 p-3 bg-warning text-black">CDs</div>
+      <div class="col-sm-3 p-3 bg-danger text-white">Record Players</div>
+      <div class="col-sm-3 p-3 bg-warning text-black">Posters</div>
+    </div>
+  </div>
+
+  <!-- Alert-->
+  <div class="container mt-3">
+    <div class="alert alert-info alert-dismissible fade show">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>New Deals!</strong> Buy 3 Vinyls, get 1 poster free!
     </div>
   </div>
 
@@ -67,22 +82,23 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src=" "
-          alt=" " class="d-block" style="width:100%">
+          src="Vinyl records store.jpg"
+          alt="Vinyl shelves" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
         <img
-          src=" "
-          alt=" " class="d-block" style="width:100%">
+          src="cd shelves.jpg"
+          alt="CDs " class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-        <img src=" " alt=" " class="d-block"
+        <img src="record player🎶.jpg" 
+         alt="Records " class="d-block"
           style="width:100%">
       </div>
       <div class="carousel-item">
         <img
-          src=" "
-          alt=" " class="d-block" style="width:100%">
+          src="Posters.jpg"
+          alt="Posters " class="d-block" style="width:100%">
       </div>
     </div>
 
@@ -96,47 +112,89 @@
   </div>
 
 
+    <!--Alert -->
+    <div class="container mt-3">
+      <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>New Deals!</strong> Buy 2 posters, get 1 CD free!
+      </div>
+    </div>
+    
+    <!-- About-->
+    <div class="About" style="background-color: blanchedalmond;" >
+    <h2 id="about"> About</h2>
+    <p> 
+      Melody Lane is more than just a record shop; it's a vibrant sanctuary for music lovers of all kinds. Designed with teenagers in mind, the shop provides a cozy, welcoming atmosphere where young people can escape the outside world and immerse themselves in the sounds of their favorite artists.
+      With its walls lined with vinyl records, comfortable seating, and soft lighting, Melody Lane is the perfect place to discover new music, chat with like-minded individuals, or simply relax and vibe out. Above all, the shop is a safe space, fostering a sense of community and inclusivity where everyone can express themselves and feel at home.
+      Whether you're hunting for rare finds or just looking for a chill hangout spot, Melody Lane is the ultimate destination for music lovers looking to connect and unwind.
+    </p>
+  </div>
+
+  <!-- Services-->
+  <div class="Services" style="background-color: blanchedalmond;">
+  <h2 id="Services"> Services</h2>
+  <p>
+    Melody Lane offers a variety of services designed to enhance the experience for music enthusiasts. In addition to its extensive collection of vinyl records, the shop provides a cozy listening area where customers can sample albums before making a purchase.
+    For those looking to expand their music knowledge, Melody Lane hosts weekly events like album listening parties, live performances by local artists, and music discussions.
+  </p>
+  <p>
+    The shop also offers vinyl record cleaning and repair services, ensuring your collection stays in top condition.
+    For teens who want to dive deeper into the music world, Melody Lane provides personalized recommendations, music tutorials, and workshops on DJing or music production.
+    With a focus on community, the shop also runs a loyalty program where frequent visitors can earn discounts and exclusive access to special events.
+  </p>
+  </div>
+  
+
   <!-- Cards-->
-  <div class="row">
+  <div class="row" id="Contact">
     <div class="col-sm-6 p-6 ">
-      <div class="card">
+      <div class="card bg-danger text-white">
         <div class="card-body">
-          <h4 class="card-title">Card 1</h4>
-          <p class="card-text">Some text. Some more text.</p>
+          <h4 class="card-title">Tati</h4>
+          <p class="card-text">Tati works the Vinyl section.</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
     </div>
     <div class="col-sm-6 p-6 ">
-      <div class="card">
+      <div class="card bg-warning text-black">
         <div class="card-body">
-          <h4 class="card-title">Julian Ortega</h4>
-          <p class="card-text">Some text. Some more text.</p>
+          <h4 class="card-title">Julian </h4>
+          <p class="card-text">Julian works the CD section.</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
     </div>
     <div class="col-sm-6 p-6 ">
-      <div class="card">
+      <div class="card bg-danger text-white">
         <div class="card-body">
-          <h4 class="card-title">Card 3</h4>
-          <p class="card-text">Some text. Some more text.</p>
+          <h4 class="card-title">Mika</h4>
+          <p class="card-text">Mika works the poster section.</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
     </div>
     <div class="col-sm-6 p-6 ">
-      <div class="card">
+      <div class="card bg-warning text-black">
         <div class="card-body">
-          <h4 class="card-title">Card 4</h4>
-          <p class="card-text">Some text. Some more text.</p>
+          <h4 class="card-title">Remy</h4>
+          <p class="card-text">Remy works the record player section.</p>
           <a href="#" class="card-link">Card link</a>
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <!-- Alert-->
+  <div class="container mt-3">
+    <div class="alert alert-info alert-dismissible fade show">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>New Deals!</strong> Buy 1 Record player, get 2 Vinyls 50% off!
     </div>
   </div>
 
